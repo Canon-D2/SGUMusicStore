@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b733cd96b21143b7b043520fde72cadd" Name="Diagram1">
+        <EntityTypeShape EntityType="SGUMusicStoreModel.Bill" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.DetailBIll" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.ImageProduct" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.Permission" Width="1.5" PointX="1.5" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.Product" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.Type" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.User" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGUMusicStoreModel.Voucher" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SGUMusicStoreModel.LK1" ManuallyRouted="false" />
+        <AssociationConnector Association="SGUMusicStoreModel.LK3" ManuallyRouted="false" />
+        <AssociationConnector Association="SGUMusicStoreModel.LK2" ManuallyRouted="false" />
+        <AssociationConnector Association="SGUMusicStoreModel.LK5" ManuallyRouted="false" />
+        <AssociationConnector Association="SGUMusicStoreModel.LK4" ManuallyRouted="false" />
+        <AssociationConnector Association="SGUMusicStoreModel.LK6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
