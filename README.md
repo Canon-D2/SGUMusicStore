@@ -1,7 +1,6 @@
 ĐỒ ÁN CHUYÊN NGÀNH: ĐẶNG CHÍ BẢO - 3120410046
 
-CHỦ ĐỀ: XÂY DỰNG VÀ PHÁT TRIỂN HỆ THỐNG BÁN NHẠC CỤ TRỰC TUYẾN VỚI FRAMEWORK ASP.NET DỰA TRÊN MÔ HÌNH MVC
-BAO GỒM FILE WORD + FILE THIẾT KẾ + SOURCE + CSDL
+CHỦ ĐỀ: XÂY DỰNG VÀ PHÁT TRIỂN HỆ THỐNG BÁN NHẠC CỤ TRỰC TUYẾN VỚI FRAMEWORK ASP.NET DỰA TRÊN MÔ HÌNH MVC - BAO GỒM FILE WORD + FILE THIẾT KẾ + SOURCE + CSDL
 
 YÊU CẦU MÁY TÍNH PHẢI CÀI ĐẶT 
 + SQL SERVER
@@ -27,4 +26,4 @@ KHÁCH HÀNG:
 
 LƯU Ý: 
 + Chương trình bị giới hạn số tiền của mỗi sản phẩm.
-+ Project đã bao gồm csdl edmx, các packet nuget, chạy bằng entities framework, ko phải NET core.
++ Project đã bao gồm csdl edmx, các packet nuget, chạy bằng entities framework.
