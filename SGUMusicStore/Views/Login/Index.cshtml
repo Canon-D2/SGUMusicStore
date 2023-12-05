@@ -1,4 +1,4 @@
-﻿
+
 @model SGUMusicStore.Models.User
 
 
@@ -9,7 +9,7 @@
 
 @Styles.Render("~/Content/login")
 <div class="container">
-    <form action="~/Login/kiemtradangnhap" method="post" class="form-login form-login-cus">
+    <form id="loginForm" action="~/Login/kiemtradangnhap" method="post" class="form-login form-login-cus">
         @Html.AntiForgeryToken()
         <div class="login-box-cus">
             <p class="heading">đăng nhập tài khoản</p>
@@ -43,9 +43,13 @@
                     <a class="recapcha-link" href="">Terms of Service</a> apply.
                 </div>
 
-                <button type="submit" class="button-login  button-hover">
+                <div class="g-recaptcha" data-sitekey="6Lc7qQsmAAAAAD4KHU04xef_E6OYf0cUQPpSlgwz" data-callback="verifyCaptcha"></div>
+                <input type="hidden" name="captchaVerified" id="captchaVerified" value="false"><br>
+
+                <button type="button" onclick="verifyCaptchaAndSubmit()" class="button-login  button-hover">
                     ĐĂNG NHẬP
                 </button>
+
                 <div class="modal-help">
                     Khách hàng mới?
                     <div style="display: inline; cursor: pointer"
@@ -67,11 +71,39 @@
     </form>
 </div>
 
-
+<script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
 @Scripts.RenderFormat("<script src='{0}' type='module'></script>", "~/bundles/login")
 @Scripts.Render("~/bundles/admin/jquery")
 <script>
     $('#modal-register').click(() => {
         window.location.href = '/register'
     })
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#loginForm').submit(function (event) {
+            var isCaptchaVerified = $('#captchaVerified').val();
+            if (isCaptchaVerified !== 'true') {
+                alert('Vui lòng xác thực CAPTCHA trước khi đăng nhập.');
+                event.preventDefault(); // Ngăn chặn gửi form nếu CAPTCHA chưa được xác thực
+            }
+        });
+
+        // Hàm gọi khi CAPTCHA được xác thực thành công
+        window.verifyCaptcha = function () {
+            $('#captchaVerified').val('true');
+        };
+    });
+</script>
+
+<script>
+    function verifyCaptchaAndSubmit() {
+        var isCaptchaVerified = $('#captchaVerified').val();
+        if (isCaptchaVerified !== 'true') {
+            alert('Vui lòng xác thực CAPTCHA trước khi đăng nhập.');
+        } else {
+            $('#loginForm').submit();
+        }
+    }
 </script>
