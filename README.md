@@ -1,13 +1,14 @@
 ĐỒ ÁN CHUYÊN NGÀNH: ĐẶNG CHÍ BẢO - 3120410046
 
-CHỦ ĐỀ: XÂY DỰNG VÀ PHÁT TRIỂN HỆ THỐNG BÁN NHẠC CỤ TRỰC TUYẾN VỚI FRAMEWORK ASP.NET DỰA TRÊN MÔ HÌNH MVC - BAO GỒM FILE WORD + FILE THIẾT KẾ + SOURCE + CSDL
+CHỦ ĐỀ: XÂY DỰNG VÀ PHÁT TRIỂN HỆ THỐNG BÁN NHẠC CỤ TRỰC TUYẾN VỚI FRAMEWORK ASP.NET DỰA TRÊN MÔ HÌNH MVC 
+- BAO GỒM FILE WORD + FILE THIẾT KẾ + SOURCE + CSDL
 
 YÊU CẦU MÁY TÍNH PHẢI CÀI ĐẶT 
-+ SQL SERVER
-+ VISUAL STUDIO (Linq, Boostrap, Asp.net MVC, Entity Core, Entity Sql, Entity Tool)
++ SQL SERVER 2019
++ VISUAL STUDIO (Bộ cài ASP.NET) 
 
 HƯỚNG DẪN CHẠY CHƯƠNG TRÌNH
-+ Chạy File Cơ Sở Dữ Liệu bằng SQL SERVER
++ Chạy File database bằng SQL SERVER
 + Sao chép đường dẫn của máy tính trong SQL SERVER
 + Dán vào Server Explorer trong Visual Studio để nhận chuỗi kết nối
 + Tiếp tục sao chép chuỗi kết nối (connection string) và dán vào File Web.config
@@ -15,6 +16,7 @@ HƯỚNG DẪN CHẠY CHƯƠNG TRÌNH
 
 TỔNG QUAN:
 ADMIN:
++ Thống kê cơ bản
 + Xem danh sách sản phẩm, tìm kiếm sản phẩm, thêm, sửa, xóa sản phẩm.
 + Xem danh sách hóa đơn, tìm kiếm hóa đơn, cập nhật thông tin (trạng thái đã thanh toán chưa)
 + Xem danh sách người dùng, tìm kiếm người dùng, thêm, sửa, xóa người dùng (phân quyền Admin/User).
@@ -25,7 +27,8 @@ KHÁCH HÀNG:
 + Đăng ký tài khoản người dùng.
 + Liên hệ chăm sóc khách hàng API ChatGPT
 + Xác thực reCapcha API Google
++ Đọc báo RSS (brand updating)
 
 LƯU Ý: 
-+ Chương trình bị giới hạn số tiền của mỗi sản phẩm.
-+ Project đã bao gồm csdl edmx, các packet nuget, chạy bằng entities framework.
++ Chương trình bị giới hạn số tiền sản phẩm.
++ Nếu bị lỗi phiên bản thì hãy Update gói Nuget.
