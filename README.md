@@ -23,6 +23,7 @@ KHÁCH HÀNG:
 + Tìm kiếm sản phẩm, thêm sản phẩm và số lượng vào giỏ hàng.
 + Đăng nhập để mua hàng.
 + Đăng ký tài khoản người dùng.
++ Liên hệ chăm sóc khách hàng
 
 LƯU Ý: 
 + Chương trình bị giới hạn số tiền của mỗi sản phẩm.
