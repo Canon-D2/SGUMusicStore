@@ -16,7 +16,7 @@ HƯỚNG DẪN CHẠY CHƯƠNG TRÌNH
 
 TỔNG QUAN:
 ADMIN:
-+ Thống kê cơ bản
++ Thống kê cơ bản, đếm số lượng, thống kê biểu đồ
 + Xem danh sách sản phẩm, tìm kiếm sản phẩm, thêm, sửa, xóa sản phẩm.
 + Xem danh sách hóa đơn, tìm kiếm hóa đơn, cập nhật thông tin (trạng thái đã thanh toán chưa)
 + Xem danh sách người dùng, tìm kiếm người dùng, thêm, sửa, xóa người dùng (phân quyền Admin/User).
